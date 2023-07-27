@@ -1,0 +1,40 @@
+body {
+    background-color: #554348;
+}
+#Header1{
+    margin-top: 225px;
+    color: #fff8f0;
+    text-align: center;
+    font-size: 100px;
+}
+#HeaderParagraph{
+    margin-top: 50px;
+    text-align:center;
+    font-size: 45px;
+    color: #fff8f0;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+#HighlightWord{
+    color:#f39237
+}
+#ProjectListTitle{
+    margin-top: 350px;
+    color: #fff8f0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.Nav{
+    background-color: #554348;
+    overflow: hidden;
+
+}
+.Nav a{
+    float: left;
+    color:#fff8f0;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:25px;
+}
