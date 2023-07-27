@@ -2,18 +2,23 @@ body {
     background-color: #554348;
 }
 #Header1{
-    margin-top: 225px;
+    line-height: 450px;
+    margin:auto;
+    height: 300px;
     color: #fff8f0;
     text-align: center;
     font-size: 100px;
 }
 #HeaderParagraph{
-    margin-top: 50px;
+    height: 200px;
+   
+    margin:auto;
     text-align:center;
     font-size: 45px;
     color: #fff8f0;
     padding-left: 350px;
     padding-right: 350px;
+    padding-top:40px;
 }
 #HighlightWord{
     color:#f39237
