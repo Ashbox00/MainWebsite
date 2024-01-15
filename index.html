@@ -1,34 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <title>W3.CSS Template</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    
-    <title>gage ashbaugh</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
-<body>
-    <div class="Nav">
-        <a class="active" href="index.html">gage ashbaugh</a>
-        <a href="about.html">About</a>
-        <a href="https://docs.google.com/document/d/1YnvZy_l07YOQxNtUwA8JbRitlXHquv8_gsVEdhiEPjE/edit?usp=sharing">Resume</a>
-    </div>
-    <div id="headbox1">
-        <div id="headbox2">
-            <h1 id="Header1">Hi, I'm Gage!</h1>
-            <p id="HeaderParagraph">I'm a computer science major at CSUF. I'm driven by <span id="HighlightWord">curiosity</span>,
-                <span id="HighlightWord">passion</span> and <span id="HighlightWord">determination</span>. </p>
+<body class="w3-black">
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-sand w3-wide w3-padding w3-card">
+            <a href="#home" class="w3-bar-item w3-button"><b>GA</b></a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#Experience" class="w3-bar-item w3-button">Experience</a>
+                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+
+
+            </div>
         </div>
     </div>
 
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image w3-opacity-min" src="/IMG/IMG_9449.jpg" alt="Architecture" width="1500" height="800">
+        <div class="w3-display-middle w3-margin-top w3-center">
+            <h1 class="w3-xxlarge w3-text-white w3-animate-top"><span class="w3-padding w3-black w3-opacity-min"><b>Gage
+                        Ashbaugh</b></span> <br><span class="w3-hide-small w3-text-white">Software Engineer</span>
+            </h1>
+        </div>
+    </header>
 
-    <p id="ProjectListTitle">Here are some projects that I have made so far</p>
+    <!-- Page content -->
+    <div class=" w3-content w3-padding" style="max-width:1564px">
 
 
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32" id="about">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+            <p>I'm a student at <u>Cal State Univeristy of Fullerton</u> studying computer science with an empthasis in
+                Software Engineering. I enjoy building projects using a variety of technologies, and I'm always looking
+                forward to learning something new about the field.
+            </p>
+            <button class="w3-pale-yellow w3-button"
+                onclick="window.location.href='//github.com/Ashbox00'">Github</button> <button
+                class="w3-pale-yellow w3-button"
+                onclick="window.location.href='//www.linkedin.com/in/gage-ashbaugh-64469b204'">LinkedIn</button>
+
+        </div>
+
+
+        <!-- Experience Section-->
+        <div class="w3-row-padding w3-grayscale" id="Experience">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Experience</h3>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="/IMG/1631318078512.jpg" alt="John" style="width:65%">
+                <h3>USGS Software Engineer Intern</h3>
+                <p class="w3-opacity">June 2023 - December 2023</p>
+                <p>Helped finish a seismic station evaluation website using <u>Flask</u> and <u>Javascript</u></p>
+
+            </div>
+
+        </div>
+
+        <!-- Project Section -->
+        <div class="w3-container w3-padding-32" id="projects">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Pixel Rain</div>
+                    <img src="/IMG/PixelRain.png" alt="House" style="width:93%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Car Game</div>
+                    <img src="/IMG/cargame.png" alt="House" style="width:65%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-pearl w3-padding">Sorting Visualization</div>
+                    <img src="/IMG/bubblesortvisualizataion.png" alt="House" style="width:100%">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+        <p>Built by Gage Ashbaugh</p>
+    </footer>
 
 </body>
 
