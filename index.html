@@ -1,131 +1,306 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Gage Ashbaugh</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gage Ashbaugh</title>
+  <meta name="description" content="Portfolio of Gage Ashbaugh — software & electrical engineering projects." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="w3-black">
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-sand w3-wide w3-padding w3-card">
-            <a href="#home" class="w3-bar-item w3-button"><b>GA</b></a>
-            <!-- Float links to the right. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
-                <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#Experience" class="w3-bar-item w3-button">Experience</a>
-                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+  <!-- Navbar -->
+  <header class="site-header" id="home">
+    <nav class="nav">
+      <a class="nav__brand" href="#home">Gage Ashbaugh</a>
 
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
 
-            </div>
-        </div>
+      <div class="nav__links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Intro">
+    <img class="hero__image" src="/IMG/IMG_9449.jpg" alt="Gage Ashbaugh" />
+    <a class="hero__scroll" href="#about" aria-label="Scroll to About">↓</a>
+    <div class="hero__overlay">
+
+      <h1 class="hero__title">
+        <span><strong>Gage Ashbaugh</strong></span><br />
+        <span class="hero__subtitle">Bridging Software and Electrical Engineering</span>
+      </h1>
+      <p class="hero__note">M.S. student focused on embedded systems & PCB design. </p>
+      <div class="hero__chips">
+        <span class="chip">Embedded / RTOS</span>
+        <span class="chip">C/C++ • Python </span>
+        <span class="chip">I2C/SPI • Sensors • Comms </span>
+    </div>
     </div>
 
-    <!-- Header -->
-    <header class="w3-display-container w3-content w3-wide" style="max-width:2000px;" id="home">
-        <img class="w3-image w3-opacity-min" src="/IMG/IMG_9449.jpg" alt="Architecture" width="2000" height="700">
-        <div class="w3-display-middle w3-margin-top w3-center">
-            <h1 class="w3-xxlarge w3-text-white w3-animate-top"><span class="w3-padding w3-black w3-opacity-min"><b>Gage
-                        Ashbaugh</b></span> <br><span class="w3-hide-small w3-text-white">Software Engineer</span>
-            </h1>
-        </div>
-    </header>
+    
 
-    <!-- Page content -->
-    <div class=" w3-content w3-padding" style="max-width:1564px">
+  </section>
 
-
-        <!-- About Section -->
-        <div class="w3-container w3-padding-32" id="about">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-            <p>I'm a student at <u>Cal State University of Fullerton</u> studying computer science with an emphasis in
-                Software Engineering. I enjoy building projects using a variety of technologies, and I'm always looking
-                forward to learning something new about the field.
+  <main id="main" class="container">
+    <!-- About -->
+    <section class="section section--about section--centered" id="about">
+        <header class="section__header">
+          <h2>About</h2>
+          <div class="section__rule"></div>
+        </header>
+      
+        <div class="about">
+          <!-- Photo -->
+          <div class="about__photo">
+            <img
+              src="/IMG/me.jpg"
+              alt="Gage Ashbaugh"
+              loading="lazy"
+            />
+          </div>
+      
+          <!-- Text -->
+          <div class="about__content">
+            <p class="section__lead">
+              I hold a <strong>Bachelor’s degree in Computer Science</strong> from
+              <u>Cal State University of Fullerton</u> and am currently pursuing a
+              <strong>Master’s degree</strong> with a focus on
+              <strong>embedded systems and electrical communications</strong>.
+              My goal is to bridge the gap between
+              <strong>computer science and electrical engineering</strong>
+              while pursuing my interest in the
+              <strong>aerospace industry</strong>.
+              I enjoy building hands-on projects that integrate low-level software
+              with hardware systems.
             </p>
-            <button class="w3-pale-yellow w3-button"
-                onclick="window.location.href='//github.com/Ashbox00'">Github</button> <button
-                class="w3-pale-yellow w3-button"
-                onclick="window.location.href='//www.linkedin.com/in/gage-ashbaugh-64469b204'">LinkedIn</button>
-
+      
+            <div class="button-row">
+              <a class="button" href="https://github.com/Ashbox00" target="_blank">GitHub</a>
+              <a class="button" href="https://www.linkedin.com/in/gage-ashbaugh-64469b204" target="_blank">LinkedIn</a>
+            </div>
+          </div>
         </div>
+      </section>
+      
 
-
-        <!-- Experience Section-->
-        <div class="w3-row-padding w3-grayscale" id="Experience">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Experience</h3>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="/IMG/1200px-USGS_logo.svg.png" alt="John" style="width:65%">
-                <h3>USGS Software Engineer Intern</h3>
-                <p class="w3-opacity">June 2023 - December 2023</p>
-                <p>Developed an interactive website for monitoring seismic stations, featuring a dynamic map interface.
-                    Implemented functionality for users to add, delete, and modify stations, enhancing real-time
-                    tracking and management of seismic data </p>
-
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <header class="section__header">
+          <h2>Experience</h2>
+          <div class="section__rule"></div>
+        </header>
+      
+        <div class="experience-list">
+          <article class="experience">
+            <div class="experience__logo">
+              <img src="/IMG/1200px-USGS_logo.svg.png" alt="USGS logo" />
             </div>
+      
+            <div class="experience__content">
+              <h3 class="experience__title">USGS — Software Engineer Intern</h3>
+              <p class="experience__meta">June 2023 – December 2023</p>
+      
+              <p class="experience__text">
+                Developed an interactive website for monitoring seismic stations,
+                featuring a dynamic map interface. Implemented functionality for
+                users to add, delete, and modify stations, enhancing real-time
+                tracking and management of seismic data.
+              </p>
+            </div>
+          </article>
 
+          <article class="experience">
+            <div class="experience__logo">
+              <img src="/IMG/shield-theta-tau.png.webp" alt="USGS logo" />
+            </div>
+      
+            <div class="experience__content">
+              <h3 class="experience__title">Theta Tau  — Project Chair</h3>
+              <p class="experience__meta">June 2025 – December 2025</p>
+      
+              <p class="experience__text">
+                Designed personalized projects for engineering majors, leading to enhanced personal and professional growth among members. 
+                Spearheaded the production of a hydroponic station, integrating software engineering, electrical engineering, and solid works design principles.
+                Collaborated with other chapters within the state to plan a competition among the chapters for robotics design.
+              </p>
+            </div>
+          </article>
+      
+          <!-- Add more <article class="experience"> blocks here -->
         </div>
+      </section>
 
-        <!-- Project Section -->
-        <div class="w3-container w3-padding-32" id="projects">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+      <!-- Working on Now-->
+      <section class="section section--now" id="now">
+        <header class="section__header">
+          <h2>Currently Working On</h2>
+          <div class="section__rule"></div>
+        </header>
+      
+        <div class="now">
+          <ul class="now-list">
+            <li>
+              <span class="now-title">Embedded Power Telemetry System</span>
+              Building a voltage and power monitoring system using an external display,
+              focusing on sensor interfacing, data visualization, and embedded system
+              integration.
+            </li>
+          </ul>
         </div>
+      </section>
+      
+      
 
-        <div class="w3-row-padding">
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Pixel Rain</div>
-                    <a href="https://github.com/Ashbox00/PixelRain"> <img src="/IMG/PixelRain.png" alt="House"
-                            style="width:93%"></a>
-                    <div class="w3-display-botleft w3-pearl w3-padding">C++</div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Car Game</div>
-                    <a href="https://github.com/Ashbox00/CarGame"><img src="/IMG/cargame.png" alt="House"
-                            style="width:55%"></a>
-                    <div class="w3-display-botleft w3-pearl w3-padding">C++/Game</div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-pearl w3-padding">Sorting Visualization</div>
-                    <a href="https://github.com/Ashbox00/BubbleSortVisualization"><img
-                            src="/IMG/bubblesortvisualizataion.png" alt="House" style="width:100%"></a>
-                    <div class="w3-display-botleft w3-pearl w3-padding">C++/Algorithms</div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-pearl w3-padding">Graphics Shaders</div>
-                    <img src="/IMG/graphics_shaders.png" alt="House" style="width:100%">
-                    <div class="w3-display-botleft w3-pearl w3-padding">C++/OpenGl/Shaders</div>
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-pearl w3-padding">DotsNLines Wallpaper</div>
-                    <a href="https://github.com/Ashbox00/ConnectingDots"><img src="/IMG/DotsNLines.png" alt="House"
-                            style="width:100%"></a>
-                    <div class="w3-display-botleft w3-pearl w3-padding">C++/Graphics</div>
-                </div>
-            </div>
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <header class="section__header">
+          <h2>Projects</h2>
+          <div class="section__rule"></div>
+          <p class="section__subtext">
+            A mix of systems, graphics, and algorithm-focused builds — with an increasing focus on embedded + communications.
+          </p>
+        </header>
+      
+        <!-- Featured Projects -->
+        <div class="projects-block">
+          <div class="projects-block__header">
+            <h3 class="projects-block__title">Featured</h3>
+          </div>
+      
+          <div class="grid grid--featured">
+            <!-- Featured Project Card -->
 
+    
+            <article class="project-card project-card--featured">
+                <a class="project-card__media" href="https://github.com/Ashbox00/ConnectingDots" target="_blank" rel="noopener noreferrer">
+                  <img src="/IMG/DotsNLines.png" alt="Connecting Dots Preview" loading="lazy" />
+                </a>
+        
+                <div class="project-card__body">
+                  <div class="project-card__top">
+                    <h4 class="project-card__title">Dynamic Wallpaper</h4>
+                    <p class="project-card__desc">
+                      Dynamic Moving Wallpaper that allows for a user to manipulate the background
+                    </p>
+                  </div>
+        
+                  <div class="tag-row">
+                    <span class="tag">C++</span>
+                    <span class="tag">Graphics</span>
+                    <span class="tag">Performance</span>
+                  </div>
+        
+                  <div class="project-card__actions">
+                    <a class="link-button" href="https://github.com/Ashbox00/ConnectingDots" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <!-- Optional: add a demo link -->
+                    <!-- <a class="link-button link-button--ghost" href="#" target="_blank" rel="noopener noreferrer">Demo</a> -->
+                  </div>
+                </div>
+              </article>
+      
+            <article class="project-card project-card--featured">
+              <a class="project-card__media"  target="_blank" rel="noopener noreferrer">
+                <img src="/IMG/smart watchpng.png" alt="Sorting Visualization preview" loading="lazy" />
+              </a>
+      
+              <div class="project-card__body">
+                <div class="project-card__top">
+                  <h4 class="project-card__title">Smart Tablet</h4>
+                  <p class="project-card__desc">
+                    Wrote the driver code for the display and worked on the operating system that allowed easy user accessibility. 
+                  </p>
+                </div>
+      
+                <div class="tag-row">
+                  <span class="tag">C</span>
+                  <span class="tag">Linux</span>
+                  <span class="tag">I2C</span>
+                </div>
+      
+                <div class="project-card__actions">
+                  <a class="link-button" href="https://github.com/Ashbox00/BubbleSortVisualization" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+      
+        <!-- More Projects -->
+        <div class="projects-block">
+          <div class="projects-block__header projects-block__header--tight">
+            <h3 class="projects-block__title">More Projects</h3>
+          </div>
+      
+          <div class="grid grid--projects2">
+            <article class="project-mini">
+              <a class="project-mini__media" href="https://github.com/Ashbox00/CarGame" target="_blank" rel="noopener noreferrer">
+                <img src="/IMG/cargame.png" alt="Car Game preview" loading="lazy" />
+              </a>
+              <div class="project-mini__body">
+                <h4 class="project-mini__title">Car Game</h4>
+                <p class="project-mini__desc">Small game project exploring gameplay logic and iteration in C++.</p>
+                <div class="tag-row">
+                  <span class="tag">C++</span>
+                  <span class="tag">Game Dev</span>
+                </div>
+                <div class="project-mini__actions">
+                  <a class="link-button link-button--ghost" href="https://github.com/Ashbox00/CarGame" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+      
+            <article class="project-mini">
+              <div class="project-mini__media">
+                <img src="/IMG/graphics_shaders.png" alt="Graphics Shaders preview" loading="lazy" />
+              </div>
+              <div class="project-mini__body">
+                <h4 class="project-mini__title">Graphics Shaders</h4>
+                <p class="project-mini__desc">Shader experiments focused on lighting, materials, and rendering effects.</p>
+                <div class="tag-row">
+                  <span class="tag">C++</span>
+                  <span class="tag">OpenGL</span>
+                  <span class="tag">Shaders</span>
+                </div>
+              </div>
+            </article>
+      
+            
 
 
-    </div>
 
 
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-16">
-        <p>Built by Gage Ashbaugh</p>
-    </footer>
 
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer class="footer">
+    <p>Built by Gage Ashbaugh</p>
+  </footer>
+
+  <script>
+    // Simple mobile nav toggle (keeps it framework-free)
+    const toggle = document.querySelector(".nav__toggle");
+    const links = document.querySelector("#nav-links");
+
+    toggle?.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!isOpen));
+      links.classList.toggle("nav__links--open");
+    });
+  </script>
 </body>
-
 </html>
